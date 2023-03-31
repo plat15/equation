@@ -5,8 +5,8 @@ public class Main {
 
         int a;
         int b;
-        double x = 0;
-        String kq = null;
+        double x;
+        String kq;
 
         Scanner sc = new Scanner(System.in);
 
@@ -23,12 +23,12 @@ public class Main {
                 kq = "Phương trình vô nghiệm.";
             }
         } else {
-            kq = String.valueOf(x = (double) -b / a);
+            kq = "Phương trình có nghiệm là: x = " + -b / a;
         }
 
         System.out.println("=======================================================");
         System.out.println("Phương trình bạn vừa nhập là: " + a + "x " + b + " = 0");
-        System.out.println("Nghiệm của phương trình là: " + kq);
+        System.out.println(kq);
         System.out.println("=======================================================");
 
     }
